@@ -8,13 +8,15 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 CREATE TABLE `refbrgy` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
   `psgcCode` varchar(255) DEFAULT NULL,
   `psgcOldCode` varchar(255) DEFAULT NULL,
   `brgyDesc` text,
   `regCode` varchar(255) DEFAULT NULL,
   `provCode` varchar(255) DEFAULT NULL,
   `citymunCode` varchar(255) DEFAULT NULL,
-  `brgyCode` varchar(255) DEFAULT NULL
+  `brgyCode` varchar(255) DEFAULT NULL,
+  PRIMARY KEY(`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `refbrgy` (`psgcCode`, `psgcOldCode`, `brgyDesc`, `regCode`, `provCode`, `citymunCode`, `brgyCode`) VALUES
